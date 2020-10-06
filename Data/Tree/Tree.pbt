@@ -51,6 +51,7 @@ Objects {
   ChildIds: 16765004465456396316
   ChildIds: 3232058792262537580
   ChildIds: 4838367280853510505
+  ChildIds: 13157162591483068476
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -60,6 +61,33 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 13157162591483068476
+  Name: "Checkpoints"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Checkpoints"
   }
 }
 Objects {
