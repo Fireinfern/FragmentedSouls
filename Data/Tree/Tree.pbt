@@ -47,6 +47,8 @@ Objects {
   ChildIds: 11469302847311806131
   ChildIds: 12894929396934667989
   ChildIds: 4801457059757967285
+  ChildIds: 11225576373258822780
+  ChildIds: 3059071086228792302
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -56,6 +58,127 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 3059071086228792302
+  Name: "MovingPlatform"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2671395276593627741
+      value {
+        Overrides {
+          Name: "Name"
+          String: "MovingPlatform"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 8321.67
+            Y: -4647.49658
+            Z: 388.642822
+          }
+        }
+        Overrides {
+          Name: "StaticMesh"
+          AssetReference {
+            Id: 7144363769242365623
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 5021787745358976968
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11916254025430631207
+      value {
+        Overrides {
+          Name: "cs:TimeToTravel"
+          Float: 4
+        }
+        Overrides {
+          Name: "cs:Offset"
+          Vector {
+            Y: -2800
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2357647169488416784
+    }
+  }
+}
+Objects {
+  Id: 11225576373258822780
+  Name: "SpikeTrap"
+  Transform {
+    Location {
+      X: 5283.93555
+      Y: -7760.09277
+      Z: 393.006348
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.81439042
+      Y: 2.81439042
+      Z: 2.81439042
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4149476347164763570
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SpikeTrap"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6895.93066
+            Y: -7760.09277
+            Z: 393.006348
+          }
+        }
+        Overrides {
+          Name: "cs:ActivationTime"
+          Float: 0.5
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 2.81439042
+            Y: 2.81439042
+            Z: 2.81439042
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13385094954737954345
+    }
   }
 }
 Objects {

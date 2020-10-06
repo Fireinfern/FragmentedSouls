@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7144363769242365623
+  Name: "Gem - Radiant Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gem_radiant_polished_001"
+  }
+}
+Assets {
   Id: 5903341814524998140
   Name: "Magic Bright Light Reveal 01 SFX"
   PlatformAssetType: 7

@@ -1,6 +1,305 @@
 ﻿Name: "Path"
 RootId: 6826436379014069217
 Objects {
+  Id: 9011260236961691298
+  Name: "Fantasy Castle Floor 01 4m"
+  Transform {
+    Location {
+      X: -7961.02734
+      Y: -7697.21
+      Z: 450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 7.25
+      Y: 2
+      Z: 1
+    }
+  }
+  ParentId: 6826436379014069217
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_Floor:id"
+      AssetReference {
+        Id: 11267127151949308158
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Floor:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10223008057381932438
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5260836284145749155
+  Name: "Fantasy Castle Wall 03"
+  Transform {
+    Location {
+      X: -7186.08252
+      Y: -4789.49268
+      Z: 425
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 3.66
+      Y: 0.99999994
+      Z: 1.25
+    }
+  }
+  ParentId: 6826436379014069217
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 1065302752797932018
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:id"
+      AssetReference {
+        Id: 1065302752797932018
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8983708969469221779
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3737273484832732068
+  Name: "Fantasy Castle Wall 03"
+  Transform {
+    Location {
+      X: -7936.94531
+      Y: -3994.48438
+      Z: 425
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 5.7
+      Y: 0.999996722
+      Z: 1.25
+    }
+  }
+  ParentId: 6826436379014069217
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 1065302752797932018
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:id"
+      AssetReference {
+        Id: 1065302752797932018
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8983708969469221779
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1612994159169064044
+  Name: "Fantasy Castle Wall 03"
+  Transform {
+    Location {
+      X: -6396.95068
+      Y: -4805.91357
+      Z: 425
+    }
+    Rotation {
+      Yaw: -179.999756
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.25
+    }
+  }
+  ParentId: 6826436379014069217
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 1065302752797932018
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:id"
+      AssetReference {
+        Id: 1065302752797932018
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8983708969469221779
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18313515618024452652
+  Name: "Fantasy Castle Wall 03"
+  Transform {
+    Location {
+      X: -6396.90479
+      Y: -3994.41699
+      Z: 425
+    }
+    Rotation {
+      Yaw: -179.999756
+    }
+    Scale {
+      X: 2
+      Y: 0.99999994
+      Z: 1.25
+    }
+  }
+  ParentId: 6826436379014069217
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 1065302752797932018
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:id"
+      AssetReference {
+        Id: 1065302752797932018
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8983708969469221779
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 9078054301396257523
   Name: "Fantasy Castle Floor 01 4m"
   Transform {
