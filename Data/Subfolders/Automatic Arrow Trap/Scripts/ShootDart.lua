@@ -43,10 +43,11 @@ local function Shoot()
 		shootSound:Play()
 		
 		local arrowScale = Vector3.New(0.7,0.7,0.7)
+		local arrowRotation = Rotation.New(0,0,90)
 		
-		arrowObj = World.SpawnAsset(arrow, {position = arrowPos, scale = arrowScale})
-		arrowObj2 = World.SpawnAsset(arrow, {position = arrowPos2, scale = arrowScale})
-		arrowObj3 = World.SpawnAsset(arrow, {position = arrowPos3, scale = arrowScale})
+		arrowObj = World.SpawnAsset(arrow, {position = arrowPos, scale = arrowScale, rotation = arrowRotation})
+		arrowObj2 = World.SpawnAsset(arrow, {position = arrowPos2, scale = arrowScale, rotation = arrowRotation})
+		arrowObj3 = World.SpawnAsset(arrow, {position = arrowPos3, scale = arrowScale, rotation = arrowRotation})
 		
 		triggerHit:MoveTo(arrowEndPos2, shootTime, false)
 		arrowOn=true

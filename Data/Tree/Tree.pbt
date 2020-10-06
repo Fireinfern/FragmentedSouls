@@ -44,11 +44,13 @@ Objects {
   ChildIds: 8122734062243750572
   ChildIds: 1427362885633459115
   ChildIds: 10459698034509544222
-  ChildIds: 11469302847311806131
   ChildIds: 12894929396934667989
   ChildIds: 4801457059757967285
   ChildIds: 11225576373258822780
   ChildIds: 3059071086228792302
+  ChildIds: 16765004465456396316
+  ChildIds: 3232058792262537580
+  ChildIds: 4838367280853510505
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -61,13 +63,143 @@ Objects {
   }
 }
 Objects {
-  Id: 3059071086228792302
-  Name: "MovingPlatform"
+  Id: 4838367280853510505
+  Name: "SpikeTrap"
   Transform {
+    Location {
+      X: 6895.93066
+      Y: -7760.09277
+      Z: 393.006348
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.81439042
+      Y: 2.81439042
+      Z: 2.81439042
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4149476347164763570
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SpikeTrap"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 10325
+            Y: -575
+            Z: 393.006348
+          }
+        }
+        Overrides {
+          Name: "cs:ActivationTime"
+          Float: 0.5
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 2.81439042
+            Y: 2.81439042
+            Z: 2.81439042
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13385094954737954345
+    }
+  }
+}
+Objects {
+  Id: 3232058792262537580
+  Name: "ArrowTrapAutomatic"
+  Transform {
+    Location {
+      X: 4750
+      Y: -475
+      Z: 550
+    }
+    Rotation {
+      Yaw: 89.9998245
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2303106816200482418
+      value {
+        Overrides {
+          Name: "Name"
+          String: "ArrowTrapAutomatic"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 8425
+            Y: -6825
+            Z: 550
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.9998245
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10712076960726413682
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: -390.312317
+            Z: 140.23349
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.635209739
+            Y: 2.91840839
+            Z: 3.51904464
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17405356203648486993
+    }
+  }
+}
+Objects {
+  Id: 16765004465456396316
+  Name: "MovingPlatform"
+  Transform {
+    Location {
+      X: 8252.61426
+      Y: -4844.40332
+      Z: 388.642822
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 5
+      Y: 5
+      Z: 5
     }
   }
   ParentId: 4781671109827199097
@@ -83,8 +215,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 8321.67
-            Y: -4647.49658
+            X: 10252
+            Y: -1500
             Z: 388.642822
           }
         }
@@ -118,8 +250,104 @@ Objects {
         Overrides {
           Name: "cs:Offset"
           Vector {
-            Y: -2800
+            X: -2000
           }
+        }
+        Overrides {
+          Name: "cs:RotationRate"
+          Rotator {
+            Yaw: 30
+          }
+        }
+        Overrides {
+          Name: "cs:RotationMultiplier"
+          Float: 2
+        }
+        Overrides {
+          Name: "cs:Delay"
+          Float: 2
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2357647169488416784
+    }
+  }
+}
+Objects {
+  Id: 3059071086228792302
+  Name: "MovingPlatform"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2671395276593627741
+      value {
+        Overrides {
+          Name: "Name"
+          String: "MovingPlatform"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 8252.61426
+            Y: -4844.40332
+            Z: 388.642822
+          }
+        }
+        Overrides {
+          Name: "StaticMesh"
+          AssetReference {
+            Id: 7144363769242365623
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 5021787745358976968
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11916254025430631207
+      value {
+        Overrides {
+          Name: "cs:TimeToTravel"
+          Float: 4
+        }
+        Overrides {
+          Name: "cs:Offset"
+          Vector {
+            Y: 2800
+          }
+        }
+        Overrides {
+          Name: "cs:RotationRate"
+          Rotator {
+            Yaw: 30
+          }
+        }
+        Overrides {
+          Name: "cs:RotationMultiplier"
+          Float: 2
+        }
+        Overrides {
+          Name: "cs:Delay"
+          Float: 2
         }
       }
     }
@@ -249,55 +477,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11469302847311806131
-  Name: "SpikeTrap"
-  Transform {
-    Location {
-      X: 3900
-      Y: 375
-      Z: 425
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.5
-      Y: 1.5
-      Z: 1.5
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 4149476347164763570
-      value {
-        Overrides {
-          Name: "Name"
-          String: "SpikeTrap"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2950
-            Y: 375
-            Z: 425
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.5
-            Y: 1.5
-            Z: 1.5
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 13385094954737954345
-    }
-  }
-}
-Objects {
   Id: 10459698034509544222
   Name: "SpikeTrap"
   Transform {
@@ -327,7 +506,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 2950
-            Y: 25
+            Y: -1125
             Z: 425
           }
         }
@@ -463,8 +642,8 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 10.0000019
-            Y: 44
+            X: 178.000061
+            Y: 186.25
             Z: 1
           }
         }
@@ -488,7 +667,15 @@ Objects {
           Vector {
             X: 4625
             Y: -2925
-            Z: -1925
+            Z: -1625
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
@@ -12742,7 +12929,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3900
+            X: 3525
             Y: 25
             Z: 425
           }
@@ -12784,7 +12971,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3900
+            X: 3525
             Y: 375
             Z: 425
           }
@@ -12816,6 +13003,15 @@ Objects {
   }
   ParentId: 4781671109827199097
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 7393632919856220627
+      value {
+        Overrides {
+          Name: "cs:Dir"
+          Bool: false
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 7452409739543324726
       value {
@@ -12868,7 +13064,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3775
+            X: 3825
             Y: 100
             Z: 575
           }
@@ -12876,7 +13072,33 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 5.00001621
+            Yaw: 4
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13910847543939740214
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15.1811895
+            Y: -173.5215
+            Z: -54.949707
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14412336599206809581
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15.1811895
+            Y: -173.5215
+            Z: 100
           }
         }
       }
@@ -13503,7 +13725,7 @@ Objects {
   Name: "SoulChestWhite"
   Transform {
     Location {
-      X: 8753.27441
+      X: 12200
       Y: 479.400269
       Z: 423.496948
     }
@@ -13678,8 +13900,8 @@ Objects {
   Name: "SoulChestBlue"
   Transform {
     Location {
-      X: 8753.27441
-      Y: 1.45036316
+      X: 12200
+      Y: 1.45037842
       Z: 423.496948
     }
     Rotation {
@@ -13853,7 +14075,7 @@ Objects {
   Name: "SoulChestYellow"
   Transform {
     Location {
-      X: 8753.27441
+      X: 12200
       Y: 325.856934
       Z: 423.496948
     }
@@ -14027,8 +14249,8 @@ Objects {
   Name: "SoulChestGreen"
   Transform {
     Location {
-      X: 8753.27441
-      Y: 177.946213
+      X: 12200
+      Y: 177.946228
       Z: 423.496948
     }
     Rotation {
@@ -14346,9 +14568,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 4100
-            Y: 100
+            X: 4750
+            Y: -475
             Z: 550
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.9998245
           }
         }
       }

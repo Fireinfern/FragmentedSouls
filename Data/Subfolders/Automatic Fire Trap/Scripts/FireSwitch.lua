@@ -6,6 +6,7 @@ local firePos = firePosObj:GetWorldPosition()
 local firePosTop = firePosTopObj:GetWorldPosition()
 
 local fireBlast = script:GetCustomProperty("FireBlast")
+--fireBlast.rotation = Vector3.New(0,0,-90)
 
 local spawnedFire = nil
 local spawnedFireTop = nil
